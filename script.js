@@ -69,3 +69,5 @@ console.log(ar)
 const ar1=[12,"mahesh",80,true]
 ar1[1]="sai";
 console.log(ar1);
+let ar2=["pavan","mahesh","mahendra","santosh"]
+console.log(ar2)
