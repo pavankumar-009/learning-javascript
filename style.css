@@ -1,3 +1,8 @@
 h1{
-    color:blue
+    color:blue;
+
+    align-items: center;
+}
+body{
+    background-color: antiquewhite;
 }

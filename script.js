@@ -54,20 +54,58 @@
 //  d=2;
 // console.log(d**3)
 
-let userData=[10,"pavan",false,9,null,'bye']
-//console.log(userData);
-for(let i=0;i<userData.length;i++)
-{
-    //console.log(userData[i])
-    console.log(typeof userData[i])
-}
-var ar=[12,"pavan",false,89]
-ar[0]=90;
-console.log(ar)
+// let userData=[10,"pavan",false,9,null,'bye']
+// //console.log(userData);
+// for(let i=0;i<userData.length;i++)
+// {
+//     //console.log(userData[i])
+//     console.log(typeof userData[i])
+// }
+// var ar=[12,"pavan",false,89]
+// ar[0]=90;
+// console.log(ar)
 
 
-const ar1=[12,"mahesh",80,true]
-ar1[1]="sai";
-console.log(ar1);
-let ar2=["pavan","mahesh","mahendra","santosh"]
-console.log(ar2)
+// const ar1=[12,"mahesh",80,true]
+// ar1[1]="sai";
+// console.log(ar1);
+//let ar2=["pavan","mahesh","mahendra","santosh"]
+//console.log(ar2)
+//ar2.push(10)//add element at last
+//ar2.unshift(237)//add element at first
+//console.log(ar2)
+//ar2.pop()//rempves last
+//ar2.shift()//removes first element
+//console.log(ar2)
+
+
+// const obj = {
+//     id:1,
+//     name: "guest"
+// }
+// console.log(obj.loc)
+// obj.loc ="hyd"//to define an another variable in the object
+
+// obj.array=[1,"pavan",true]
+// console.log(obj)
+
+// const obj={
+//     id: 2 ,
+//     name: "pavan",
+//     myData:[2,"pavan",true]
+// }
+const user=[
+    {
+        id : 1,
+        name: "pavan",
+        city: "hyd"     
+    },
+    {
+        id :2,
+        name: "kaushik",
+        city: "krn"
+    }
+]
+console.log(user[0])
+console.log(user[0].name)
+
