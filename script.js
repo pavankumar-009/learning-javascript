@@ -156,26 +156,48 @@
 //             break;
 //     }
 // }
-function doMath(n1,n2,key){
-    switch (key) {
-        case 1:
-            console.log(`addition of two numbers ${n1} and ${n2} is ${n1+n2}`)
-            break;
-        case 2:
-            console.log(`subtraction of two numbers  ${n1} and ${n2} is ${n1-n2}`);
-            break;
-        case 3:
-            console.log(`multiplication of two numbers  ${n1} and ${n2} is ${n1*n2}`);
-            break;
-        case 4:
-            console.log(`division of two numbers  ${n1} and ${n2} is ${n1/n2}`);
-            break;
+// function doMath(n1,n2,key){
+//     switch (key) {
+//         case 1:
+//             console.log(`addition of two numbers ${n1} and ${n2} is ${n1+n2}`)
+//             break;
+//         case 2:
+//             console.log(`subtraction of two numbers  ${n1} and ${n2} is ${n1-n2}`);
+//             break;
+//         case 3:
+//             console.log(`multiplication of two numbers  ${n1} and ${n2} is ${n1*n2}`);
+//             break;
+//         case 4:
+//             console.log(`division of two numbers  ${n1} and ${n2} is ${n1/n2}`);
+//             break;
     
-        default:
-            break;
-    }
-}
-doMath(20,2,4)
+//         default:
+//             break;
+//     }
+// }
+// doMath(20,2,4)
+//console.log(document)//html
+//console.log(document.body);//getting elements by document object
+
+let obj=document.getElementById("1")
+//console.log( obj.innerText);
+//obj.innerText="hello"
+//obj.innerText="<b>hello</b>"
+//obj.innerHTML="<b>Hello</b>"
+let para =document.getElementsByClassName("buchi")
+let boxes=document.getElementsByClassName("box")
+console.log(para);
+console.log(boxes);
+obj.innerText="hello"
+para[0].innerHTML="welcome"
+boxes[0].innerHTML="this is java script"
+boxes[1].innerHTML="module 1"
+boxes[2].innerHTML="module 2"
+
+
+
+
+
 
 
 
