@@ -179,21 +179,106 @@
 //console.log(document)//html
 //console.log(document.body);//getting elements by document object
 
-let obj=document.getElementById("1")
+//let obj=document.getElementById("1")
 //console.log( obj.innerText);
 //obj.innerText="hello"
 //obj.innerText="<b>hello</b>"
 //obj.innerHTML="<b>Hello</b>"
-let para =document.getElementsByClassName("buchi")
-let boxes=document.getElementsByClassName("box")
-console.log(para);
-console.log(boxes);
-obj.innerText="hello"
-para[0].innerHTML="welcome"
-boxes[0].innerHTML="this is java script"
-boxes[1].innerHTML="module 1"
-boxes[2].innerHTML="module 2"
+// let para =document.getElementsByClassName("buchi")
+// let boxes=document.getElementsByClassName("box")
+// console.log(para);
+// console.log(boxes);
+// obj.innerText="hello"
+// para[0].innerHTML="welcome"
+// boxes[0].innerHTML="this is java script"
+// boxes[1].innerHTML="module 1"
+// boxes[2].innerHTML="module 2"
+let b= true;
+const myfun = () => {
+    // console.log("hiii");
+    let display = document.getElementById("display");
+   if(b){
+     
+     display.src = "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/06/zoro-one-piece.jpg";
+     b=false;
+   }
+   else{
+     
+     display.src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/05/the-straw-hats-pirates-in-front-of-wanted-posters.jpg";
+    
+    b=true;
+   }
+};
+// let obj=
+//  document.getElementsById("po")
+//  obj.innerText="hello"
+ 
+const calc=() =>{
+  event.preventDefault()
 
+  let v1=Number(document.getElementById("v1").value);
+  let v2=Number( document.getElementById("v2").value);
+  let o=Number( document.getElementById("o").value);
+  let ans=0;
+    switch (o) {
+      case 1:
+          ans=v1+v2;
+        break;
+      case 2:
+        ans=v1-v2;
+        break;
+      case 3:
+        ans=v1*v2;
+        break;
+      case 4:
+        ans=v1/v2;
+        break;
+      default:
+        break;
+    }
+    // console.log(v1)
+    // console.log(v2)
+    // console.log(o)
+    // console.log(ans);
+    
+    document.getElementById("sol").innerText=ans;
+}
+
+const bcolo=()=> {
+
+    let display=document.getElementById("1");
+    let codes=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
+    let colour="#"
+    for(let i=0;i<6;i++)
+    {
+      var random=Math.floor(Math.random()*16);
+      //console.log(random)
+      colour=colour+codes[random]
+    }
+    //console.log(colour)
+    display.style.backgroundColor =colour
+}
+bcolo()
+const add=()=>{
+  let n1=Number(document.getElementById("v1").value);
+  let n2=Number( document.getElementById("v2").value);
+  document.getElementById("sol").innerText=`addition of ${n1} and ${n2} is ${n1+n2}`;
+}
+const sub=()=>{
+  let n1=Number(document.getElementById("v1").value);
+  let n2=Number( document.getElementById("v2").value);
+  document.getElementById("sol").innerText=`difference of ${n1} and ${n2} is ${n1-n2}`;
+}
+const mul=()=>{
+  let n1=Number(document.getElementById("v1").value);
+  let n2=Number( document.getElementById("v2").value);
+  document.getElementById("sol").innerText=`multiplication of ${n1} and ${n2} is ${n1*n2}`;
+}
+const div=()=>{
+  let n1=Number(document.getElementById("v1").value);
+  let n2=Number( document.getElementById("v2").value);
+  document.getElementById("sol").innerText=`division of ${n1} and ${n2} is ${n1/n2}`;
+}
 
 
 

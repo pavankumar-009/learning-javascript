@@ -3,6 +3,8 @@ h1{
 
     align-items: center;
 }
-body{
-    background-color: antiquewhite;
+
+.buchi{
+    color: rgb(129, 127, 255);
 }
+
